@@ -2,6 +2,8 @@
 
 curriculum dropout implementation with pytorch
 
+All experiments can be run on cifar100.
+
 ```python
 
 def curriculum_p(p, epoch):
@@ -13,4 +15,4 @@ def curriculum_p(p, epoch):
 |model|acc|Curriculum dropout|
 |:---:|:---:|:---:|
 |resnet50|77.39%|False|
-|resnet50|78.71|True|
+|resnet50(ours)|78.71|True|
