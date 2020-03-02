@@ -75,8 +75,8 @@ def train(epoch):
     for batch_idx, (inputs, targets) in enumerate(trainloader):
         inputs, targets = inputs.to(device), targets.to(device)
         optimizer.zero_grad()
-        pp = curriculum_p(p, epoch)
-        print(pp)
+        p +=1
+        pp = curriculum_p(p, p)
         outputs = net(inputs, pp)
         loss = criterion(outputs, targets)
         loss.backward()
