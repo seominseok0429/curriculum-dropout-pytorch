@@ -14,7 +14,7 @@ import numpy as np
 
 def curriculum_p(p, epoch):
     gamma = 0.0001
-    return np.exp(-gamma*epoch)
+    return 1-np.exp(-gamma*epoch)
 
 def get_mean_and_std(dataset):
     '''Compute the mean and std value of dataset.'''
