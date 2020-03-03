@@ -15,4 +15,5 @@ def curriculum_p(p, epoch):
 |model|acc|Curriculum dropout|
 |:---:|:---:|:---:|
 |resnet50|77.39%|False|
+|resnet50|77.92%|False|
 |resnet50(ours)|78.71|True|
